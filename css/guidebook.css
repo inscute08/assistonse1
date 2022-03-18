@@ -1,0 +1,96 @@
+.sub_navside {
+    position: absolute;
+    left: -20px;
+}
+
+.sub_navside i {
+    font-size: 15px !important;
+}
+
+#nav_side .nav-item:not(:last-of-type) {
+    position: relative;
+}
+
+#left_arrow, #search2, #bell, #down_arrow {
+    display: inline-block;
+    border-radius: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: #1C3948;
+    position: absolute;    
+    top: 30px;
+}
+
+#left_arrow i, #search2 i, #bell i, #down_arrow i {
+    line-height: 40px;
+    font-weight: 800;
+    color: #F4DD58;
+
+}
+
+#left_arrow {
+    left: 20px;
+}
+
+#search2 {
+    right: 70px;
+}
+
+#bell {
+    right: 20px;
+}
+
+#guide {
+    font-size: 30px;
+    border-radius: 25px;
+    width: 50px;
+    height: 50px;
+    background-color: #1C3948;
+    position: absolute;    
+    bottom: 10px;
+    right: 10px;
+    
+    line-height: 50px;
+    font-weight: 800;
+    color: #F4DD58;
+}
+
+#down_arrow {
+    width: 30px;
+    height: 30px;
+    right: 5px;
+    top: 5px;
+}
+
+#down_arrow i {
+    line-height: 30px;
+}
+
+#subheader, #summary h3 {
+    position: relative;
+}
+
+#main_cont_container {
+    height: calc(100vh - 200px);
+    overflow-y: auto;
+}
+
+#summary {
+    height: fit-content;
+}
+
+#main_dropdown, .summary_content {
+    border-radius: 25px;
+}
+
+#main_dropdown {    
+    background-color: rgba(255, 255, 255, .5) !important;
+}
+
+.summary_content {    
+    background-color: rgba(255, 255, 255, .2) !important;
+}
+
+#main_dropdown:after {
+    display: none;
+}

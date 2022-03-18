@@ -1,0 +1,15 @@
+#nav_side {
+    white-space: nowrap;
+}
+
+#logout {
+    bottom: 20px !important;
+}
+
+#modal_participants .modal-dialog {
+    width: fit-content;
+}
+
+#modal_participants .modal-body {
+    padding: 0 50px;
+}

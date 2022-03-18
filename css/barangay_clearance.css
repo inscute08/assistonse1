@@ -1,0 +1,46 @@
+#brgy_buttons .btn, #modal .btn {
+    background-color: #153438 !important;
+}
+
+#brgy_clear_search {
+    position: relative;
+}
+
+#brgy_clear_search i {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+}
+
+#main_content #table_border {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#main_content table, #main_content table thead th {
+    border-color: rgba(255, 255, 255, .2);
+}
+
+#main_content table thead tr {
+    background-color: #153438;
+}
+
+#main_content table tbody tr:nth-child(odd) {
+    background-color: #1C3948;
+}
+
+#main_content table tbody tr:nth-child(even) {
+    background-color: #153438;
+}
+
+.modal-content {
+    background-color: #1C3948;
+}
+
+.button-close {
+    color: #F4DD58 !important;
+}
+
+.modal-header {
+    border-bottom: 5px solid #71989B;
+}

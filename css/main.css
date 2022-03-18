@@ -1,0 +1,12 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: #24404E;
+    color: #DFDFDF;
+}
+
+#login_form {
+    min-width: 280px;
+}

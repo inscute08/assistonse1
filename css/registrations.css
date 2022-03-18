@@ -1,0 +1,20 @@
+#modal_photos .btn, #modal_qr .btn, #modal_acts .btn, #modal_forms .btn, #modal_participants .btn, #modal_forward .btn, #modal_approve .btn {
+    background-color: #153438 !important;
+}
+
+#modal_photos .modal-content, #modal_qr .modal-content, #modal_acts .modal-content, #modal_forms .modal-content, #modal_participants .modal-content, #modal_forward .modal-content, #modal_approve .modal-content {
+    background-color: #1C3948;
+}
+
+#modal_photos .modal-header, #modal_qr .modal-header, #modal_acts .modal-header, #modal_forms .modal-header, #modal_participants .modal-header, #modal_forward .modal-header, #modal_approve .modal-header {
+    border-bottom: 5px solid #71989B;
+}
+
+#modal_photos .modal-dialog {
+    width: 300px;
+}
+
+#modal_photos .w-50, #modal_photos .w-100 {
+    height: 100px;
+    margin: 0 auto;
+}

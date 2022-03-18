@@ -1,0 +1,12 @@
+#modal input {
+    margin: 0 auto;
+    width: 150px;
+}
+
+#modal .modal-dialog {
+    width: fit-content;
+}
+
+#modal .modal-body {
+    padding: 0 100px;
+}
