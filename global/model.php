@@ -2,10 +2,10 @@
 
 	date_default_timezone_set('Asia/Manila');
 	Class Model {
-		private $server = "localhost";
-		private $username = "root";
-		private $password = "test";
-		private $dbname = "brgy_system";
+		private $server = "us-cdbr-east-05.cleardb.net";
+		private $username = "b97ac2cc002c36";
+		private $password = "19b6b88b";
+		private $dbname = "heroku_d738d2345bbb9d5";
 		private $conn;
 
 		public function __construct() {
