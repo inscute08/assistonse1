@@ -4,7 +4,7 @@
     #$type = $_POST['type'];
     #$user = $_POST['user'];
     #$msg = $_POST['msg'];
-    $date = date('y-m-d h:i:s');
+    #$date = date('y-m-d h:i:s');
 
 
     $type = "LOGBOOK";
