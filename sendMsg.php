@@ -1,15 +1,15 @@
 <?php
-    require 'connect.php';
+    require "connect.php";
 
-    $type = $_POST['type'];
-    $user = $_POST['user'];
-    $msg = $_POST['msg'];
+    #$type = $_POST['type'];
+    #$user = $_POST['user'];
+    #$msg = $_POST['msg'];
     $date = date('y-m-d h:i:s');
 
 
-    #$type = "LOGBOOK";
-    #$user = "20118980";
-    #msg = "testingsss";
+    $type = "LOGBOOK";
+    $user = "test1";
+    $msg = "testingsss";
 
 
     $sql_query = "select * from seniors where UserID like '$user';";
