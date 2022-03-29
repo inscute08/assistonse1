@@ -12,8 +12,7 @@
     $msg = "testingsss";
     
     $sql_query = "INSERT INTO messages (to_id, from_id, user_type, message, status) VALUES ('20118989', '20118980', '$type', '$msg', '1');";
-    $result = mysqli_query($con,$sql_query);
-
+    mysqli_query($con,$sql_query);
+    printf("result = %s", $row["status"]);
   
-
 ?>
