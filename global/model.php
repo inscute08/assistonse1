@@ -24,14 +24,14 @@
 			if ($stmt = $this->conn->prepare($query)) {
 				$default = 'admin';
 				$status = 1;
+				$type = "Logbook"
 				$date = date("Y-m-d H:i:s");
 
-				$stmt->bind_param("iisssi", $stud_id, $_SESSION['sess'], $default, $message, $date, $status);
+				$stmt->bind_param("issssi", $stud_id, $type, $default, $message, $date, $status);
 				$stmt->execute();
 				$stmt->close();
 			}
 		}
-
 		public function fetchMessages($stud_id) {
 			$data = null;
 
