@@ -24,7 +24,7 @@
     }
 
     $response = array();
-    $sql_query = "INSERT INTO messages (to_id, from_id, user_type, message, status) VALUES ('20118989', '$hello', '$type', '$msg', '1');";
+    $sql_query = "INSERT INTO messages (to_id, from_id, user_type, message, status) VALUES ('1006', '$hello', '$type', '$msg', '1');";
     $result = mysqli_query($con,$sql_query);
 
 ?>
