@@ -6,7 +6,7 @@
     $msg = $_POST['msg'];
    
 
-    $sql_query = "select * from seniors where UserID like '$user';";
+    $sql_query = "select * from seniors where UserId like '$user';";
     $result = mysqli_query($con, $sql_query);
     if(mysqli_num_rows($result) > 0){
         while($row = mysqli_fetch_assoc($result)){
