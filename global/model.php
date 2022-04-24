@@ -24,7 +24,7 @@
 			if ($stmt = $this->conn->prepare($query)) {
 				$default = 'admin';
 				$status = 1;
-				$type = "Logbook"
+				$type = "Logbook";
 				$date = date("Y-m-d H:i:s");
 
 				$stmt->bind_param("issssi", $stud_id, $type, $default, $message, $date, $status);
