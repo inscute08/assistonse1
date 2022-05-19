@@ -44,7 +44,7 @@
 								<a class="nav-link" href="./guidebook">Guidebook</a>
 							</li>
 							<li class="nav-item flex-fill">
-								<a class="nav-link" href="./information.php">Information</a>
+								<a class="nav-link" href="./information.php">Accounts</a>
 							</li>
 						</ul>
 					</div>

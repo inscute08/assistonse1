@@ -2,10 +2,10 @@
 
 	date_default_timezone_set('Asia/Manila');
 	Class Model {
-		private $server = "us-cdbr-east-05.cleardb.net";
-		private $username = "b97ac2cc002c36";
-		private $password = "19b6b88b";
-		private $dbname = "heroku_d738d2345bbb9d5";
+		private $server = "localhost";
+		private $username = "root";
+		private $password = "";
+		private $dbname = "brgy_system";
 		private $conn;
 
 		public function __construct() {
@@ -24,14 +24,15 @@
 			if ($stmt = $this->conn->prepare($query)) {
 				$default = 'admin';
 				$status = 1;
-				$type = "Logbook";
+				$type = "LOGBOOK";
 				$date = date("Y-m-d H:i:s");
 
-				$stmt->bind_param("issssi", $stud_id, $type, $default, $message, $date, $status);
+				$stmt->bind_param("iisssi", $stud_id, $_SESSION['sess'], $type, $message, $date, $status);
 				$stmt->execute();
 				$stmt->close();
 			}
 		}
+
 		public function fetchMessages($stud_id) {
 			$data = null;
 
@@ -378,6 +379,24 @@
 			return $data;
 		}
 
+		public function fetchAttendance() {
+			$data = null;
+
+			$query = "SELECT * FROM attendance WHERE status = 1";
+
+			if ($stmt = $this->conn->prepare($query)) {
+				$stmt->execute();
+				$result = $stmt->get_result();
+				$num_of_rows = $stmt->num_rows;
+				while ($row = $result->fetch_assoc()) {
+					$data[] = $row;
+				}
+				$stmt->close();
+			}
+			return $data;
+		}
+
+
 		public function addAdmin($id_number, $name, $position, $contact, $email, $hashed_password) {
 			$query = "INSERT INTO admin (id_number, name, uname, pword, position, contact) VALUES (?, ?, ?, ?, ?, ?)";
 
@@ -391,10 +410,11 @@
 		}
 
 		public function addActivity($date_from, $date_until, $activity_type, $event_title, $description, $organizer, $venue, $benefits, $amount) {
-			$query = "INSERT INTO activities (date_from, date_until, activity_type, event_title, description, organizer, venue, benefits, amount) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
+			$query = "INSERT INTO activities (date_from, date_until, activity_type, event_title, description, organizer, venue, benefits, amount, status) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?,?)";
 
 			if($stmt = $this->conn->prepare($query)) {
-				$stmt->bind_param('sssssssss', $date_from, $date_until, $activity_type, $event_title, $description, $organizer, $venue, $benefits, $amount);
+				$status = 1;
+				$stmt->bind_param('sssssssssi', $date_from, $date_until, $activity_type, $event_title, $description, $organizer, $venue, $benefits, $amount, $status);
 				$stmt->execute();
 				$stmt->close();
 

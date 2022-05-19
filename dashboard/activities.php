@@ -43,7 +43,7 @@
 								<a class="nav-link" href="./guidebook">Guidebook</a>
 							</li>
 							<li class="nav-item flex-fill">
-								<a class="nav-link" href="./information">Information</a>
+								<a class="nav-link" href="./information">Accounts</a>
 							</li>
 						</ul>
 					</div>
@@ -61,6 +61,9 @@
 
 					<li class="nav-item mt-5">
 						<a class="nav-link text-light" href="./prev_activities">Previous Activities</a>
+					</li>
+					<li class="nav-item mt-5">
+						<a class="nav-link text-light" href="./attendance">Attendance</a>
 					</li>
 
 					<li class="nav-item text-center mb-3">
@@ -134,7 +137,7 @@
 									<td>
 										<ul class="list-unstyled">
 											<li><a href="edit_activity?id=<?php echo $row['control_no']; ?>" data-id="2" class="edit text-light text-decoration-none">Edit</a></li>
-											<li><a href="#" data-id="2" class="remove text-light text-decoration-none" data-bs-toggle="modal" data-bs-target="#update_status-<?php echo $row['control_no']; ?>">Remove</a></li>
+											<li><a href="#" data-id="2" class="remove text-light text-decoration-none" data-bs-toggle="modal" data-bs-target="#update_status-<?php echo $row['control_no']; ?>">Archive</a></li>
 										</ul>
 									</td>
 								</tr>
